@@ -1,0 +1,228 @@
+
+/* General page styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    padding: 20px;
+}
+
+
+/* Main game card */
+
+.game-container {
+    width: 100%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Heading */
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+
+/* Attempts */
+
+.game-info {
+    background: #f3f4ff;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+    color: #444;
+
+    font-weight: bold;
+}
+
+
+/* Input section */
+
+.input-section {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+input {
+    flex: 1;
+
+    padding: 14px;
+
+    font-size: 16px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+input:focus {
+    border-color: #667eea;
+}
+
+
+/* Guess button */
+
+button {
+    border: none;
+
+    padding: 14px 20px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#guessButton {
+    background: #667eea;
+
+    color: white;
+}
+
+
+#guessButton:hover {
+    background: #5568d9;
+
+    transform: translateY(-2px);
+}
+
+
+/* Message */
+
+#message {
+    min-height: 30px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin: 15px 0;
+}
+
+
+/* Hint box */
+
+.hint-box {
+    background: #f8f9fa;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin: 20px 0;
+}
+
+
+#hint {
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+/* Restart button */
+
+.restart-btn {
+    width: 100%;
+
+    background: #333;
+
+    color: white;
+
+    margin-top: 10px;
+}
+
+
+.restart-btn:hover {
+    background: #111;
+
+    transform: translateY(-2px);
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+
+    color: white;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* Mobile responsive design */
+
+@media (max-width: 500px) {
+
+    .game-container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    #guessButton {
+        width: 100%;
+    }
+}

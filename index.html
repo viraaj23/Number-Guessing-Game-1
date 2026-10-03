@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Guessing Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>🎯 Number Guessing Game</h1>
+
+        <p class="subtitle">
+            Guess the secret number between 1 and 100!
+        </p>
+
+        <div class="game-info">
+            <p>Attempts: <span id="attempts">0</span> / 10</p>
+        </div>
+
+        <div class="input-section">
+            <input
+                type="number"
+                id="guessInput"
+                placeholder="Enter your guess"
+                min="1"
+                max="100"
+            >
+
+            <button id="guessButton">Guess</button>
+        </div>
+
+        <p id="message">Make your first guess!</p>
+
+        <div class="hint-box">
+            <p id="hint">💡 Enter a number between 1 and 100.</p>
+        </div>
+
+        <button id="restartButton" class="restart-btn">
+            🔄 Restart Game
+        </button>
+
+    </div>
+
+    <footer>
+        <p>Week 03 Web Development Task | JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
